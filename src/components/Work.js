@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Work = () => {
   return (
-    <div>
-      
+    <div className="section" id="work">
+      Work
     </div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

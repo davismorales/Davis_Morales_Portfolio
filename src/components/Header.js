@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <header className='py-8'>
+      <div className='container mx-auto'>
+        <div className='flex justify-between items-center'>
+          <a href='#'>
+            <img src={Logo} alt='' />
+          </a>
 
-export default Header
+          <button className='btn btn-sm'>Work with me</button>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
