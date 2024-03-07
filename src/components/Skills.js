@@ -47,10 +47,10 @@ const Services = () => {
             initial='hidden'
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'
+            className='flex-1 lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 text-center lg:text-left'
           >
             <h2 className='h2 text-accent mb-6'>What I Do.</h2>
-            <h3 className='h3 max-w-[455px] mb-12'>
+            <h3 className='h3 lg:max-w-[455px] mb-12'>
               I hold a broad range of experience and knowledge that include
               Frontend, Backend, and Full-Stack Development, Test Driven
               Development, and advanced SQL Querying and Database Management.
@@ -58,7 +58,7 @@ const Services = () => {
             <Link to='projects' activeClass='active' smooth={true} spy={true}>
               <button className='btn btn-sm mb-8'>See my work</button>
             </Link>
-            <div className='mx-auto py-10 flex flex-1 justify-start items-start xs:justify-between xs:items-center xs:p-1'>
+            <div className='mx-auto py-10 flex flex-1 lg:justify-start justify-between xs:p-1'>
               <TechSkill src={react_logo} alt='React' label='React' />
               <TechSkill src={spring_logo} alt='Spring' label='Spring' />
               <TechSkill src={cypress_logo} alt='Cypress' label='Cypress' />
@@ -78,7 +78,7 @@ const Services = () => {
                 const { name, description } = service;
                 return (
                   <div
-                    className='border-b border-white/20 h-[146px] mb-[38px] flex'
+                    className='border-b border-white/20 mb-[38px] flex'
                     key={index}
                   >
                     <div className='max-w-[700px]'>

@@ -17,14 +17,14 @@ const Projects = () => {
             initial='hidden'
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'
+            className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0 text-center lg:text-left'
           >
             <div>
               <h2 className='h2 leading-tight text-accent'>
                 My Latest <br />
                 Projects
               </h2>
-              <h3 className='h3 max-w-sm mb-12'>
+              <h3 className='h3 lg:max-w-sm mb-12'>
                 In my free time, I enjoy diversifying my knowledge and learn new
                 skills. I often package this new knowledge into projects. Check
                 out these previews of my recent work and head over to my Github

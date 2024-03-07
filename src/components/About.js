@@ -14,7 +14,7 @@ import Resume from "../assets/resume.pdf";
 
 const About = () => {
   const [ref, inView] = useInView({
-    threshold: 0.5,
+    threshold: 0.25,
   });
   return (
     <section className='section' id='about' ref={ref}>
@@ -32,7 +32,7 @@ const About = () => {
             initial='hidden'
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className='flex-1'
+            className='flex-1 text-center lg:text-left'
           >
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
@@ -46,7 +46,7 @@ const About = () => {
               with honors. Post college I have worked within the Missouri
               Government assisting in the development of vital software.
             </p>
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12 mt-2'>
+            <div className='flex justify-center lg:justify-normal gap-x-6 lg:gap-x-10 mb-12 mt-2'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={4} duration={4} /> : null}
@@ -75,7 +75,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-x-8 items-center'>
+            <div className='flex max-w-max gap-x-8 items-center mx-auto lg:mx-0'>
               <a href={Resume} target='_blank' rel='noreferrer noopener'>
                 <button className='btn btn-lg'>Hire Me</button>
               </a>

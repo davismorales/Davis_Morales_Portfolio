@@ -1,12 +1,12 @@
 .tech-skill {
-  @apply flex flex-col xs:mr-0 mr-4 items-center justify-center;
+  @apply flex flex-col lg:mr-4 items-center justify-center;
 }
 .tech-skill-icon {
-  @apply flex items-center justify-center w-[90px] h-[90px] xs:w-[4rem] xs:h-[4rem] rounded-full border border-[#406aff];
+  @apply flex items-center justify-center sm:w-[90px] sm:h-[90px] xs:w-[4rem] xs:h-[4rem] rounded-full border border-[#406aff];
 }
 .tech-skill-icon > img {
-  @apply transition-all duration-500 w-[60px] h-[60px] xs:w-[3rem] xs:h-[3rem] items-center justify-center;
+  @apply transition-all duration-500 sm:w-[60px] sm:h-[60px] xs:w-[3rem] xs:h-[3rem] items-center justify-center;
 }
 .tech-skill-label {
-  @apply transition-all duration-700 font-primary font-semibold text-[18px] xs:text-[15px] text-accent mt-2;
+  @apply transition-all duration-700 font-primary font-semibold sm:text-[18px] xs:text-[15px] text-accent mt-2;
 }
