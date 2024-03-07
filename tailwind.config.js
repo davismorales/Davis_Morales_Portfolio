@@ -25,8 +25,7 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",
-        about: "url('./assets/davis.jpg')",
-        services: "url('./assets/davis.jpg')",
+        about: "url('./assets/college.JPEG')",
       },
     },
   },

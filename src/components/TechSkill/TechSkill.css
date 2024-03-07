@@ -1,0 +1,12 @@
+.tech-skill {
+  @apply flex flex-col mr-4 items-center justify-center;
+}
+.tech-skill-icon {
+  @apply flex items-center justify-center w-[90px] h-[90px] rounded-full border border-[#406aff];
+}
+.tech-skill-icon > img {
+  @apply transition-all duration-500 w-[60px] h-[60px] items-center justify-center;
+}
+.tech-skill-label {
+  @apply transition-all duration-700 font-primary font-semibold text-[18px] text-accent mt-2;
+}

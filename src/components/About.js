@@ -10,6 +10,8 @@ import { fadeIn } from "../variants";
 
 import { Link } from "react-scroll";
 
+import Resume from "../assets/resume.pdf";
+
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -34,12 +36,15 @@ const About = () => {
           >
             <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>
-              I am a Front-end Developer with over 4 years of experience.
+              I am a Software Developer with over 4 years of experience.
             </h3>
             <p className='mb-6'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum sollicitudin aliquam sagittis. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              My background in computer and technology spans my entire life as I
+              have always held a curiosity in how the devices that are used by
+              all in everyday life work. I decided to further my passion into a
+              career and went to Southern Illinois University where I graduated
+              with honors. Post college I have worked within the Missouri
+              Government assisting in the development of vital software.
             </p>
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
@@ -52,34 +57,37 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={3} duration={4} /> : null}
                   k+
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Projects <br /> Completed
+                  Hours <br /> Developed
                 </div>
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={12} duration={3} /> : null}
-                  k+
+                  {inView ? (
+                    <CountUp start={0} end={3.88} duration={3} decimals={2} />
+                  ) : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
-                  Satisfied <br /> Customers
+                  College <br /> GPA
                 </div>
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Contact me</button>
+              <a href={Resume} target='_blank' rel='noreferrer noopener'>
+                <button className='btn btn-lg'>Hire Me</button>
+              </a>
 
               <Link
                 to='projects'
                 activeClass='active'
                 smooth={true}
                 spy={true}
-                className='text-gradient btn-link'
+                className='text-gradient btn-link cursor-pointer'
               >
-                <a href='#'>My Portfolio</a>
+                My Portfolio
               </Link>
             </div>
           </motion.div>

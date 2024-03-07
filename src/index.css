@@ -69,10 +69,3 @@
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
 }
-
-.tech-icon {
-  @apply w-[90px] h-[90px] flex items-center justify-center mr-4 rounded-full border border-[#406aff];
-}
-.tech-icon > img {
-  @apply hover:scale-125 transition-all duration-500 w-[60px] h-[60px];
-}

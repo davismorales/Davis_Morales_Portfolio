@@ -4,11 +4,10 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 
-import Img1 from "../assets/nba-reference.PNG";
-import Img2 from "../assets/nba-reference.PNG";
-import Img3 from "../assets/nba-reference.PNG";
+import PortfolioPreview from "../assets/portfolio.PNG";
+import NbaReferencePreview from "../assets/nba-reference.PNG";
 
-const Work = () => {
+const Projects = () => {
   return (
     <section className='section' id='projects'>
       <div className='container mx-auto'>
@@ -25,10 +24,21 @@ const Work = () => {
                 My Latest <br />
                 Projects
               </h2>
-              <p className='max-w-sm mb-16'>
-                These are my most recent projects.
-              </p>
-              <button className='btn btn-sm'>View all projects</button>
+              <h3 className='h3 max-w-sm mb-12'>
+                In my free time, I enjoy diversifying my knowledge and learn new
+                skills. I often package this new knowledge into projects. Check
+                out these previews of my recent work and head over to my Github
+                to see more.
+              </h3>
+              <a
+                href='https://github.com/davismorales?tab=repositories'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <button className='btn btn-sm'>
+                  View all projects <i class='fa-brands fa-github fa-lg'></i>
+                </button>
+              </a>
             </div>
             {/* <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               <div className='group-hover:bg-black/70  w-full h-full absolute z-40 transition-all duration-300'></div>
@@ -58,23 +68,23 @@ const Work = () => {
               <div className='group-hover:bg-black/70  w-full h-full absolute z-40 transition-all duration-300'></div>
               <img
                 className='group-hover:scale-125 transition-all duration-500'
-                src={Img1}
+                src={PortfolioPreview}
                 alt=''
               />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
                 <span className='text-gradient'>
-                  Utilizing APIs to Display Unique Data in React
+                  Modern Animations to have a sleek portfolio
                 </span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>NBA Reference</span>
+                <span className='text-3xl text-white'>Portfolio Website</span>
               </div>
             </div>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               <div className='group-hover:bg-black/70  w-full h-full absolute z-40 transition-all duration-300'></div>
               <img
                 className='group-hover:scale-125 transition-all duration-500'
-                src={Img3}
+                src={NbaReferencePreview}
                 alt=''
               />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
@@ -93,4 +103,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Projects;

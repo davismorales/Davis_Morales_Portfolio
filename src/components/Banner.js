@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "../assets/davis.jpg";
+import Resume from "../assets/resume.pdf";
 
 import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 
@@ -35,18 +36,22 @@ const Banner = () => {
               initial='hidden'
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'
+              className='mb-6 text-[36px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]'
             >
               <span className='text-white mr-4'>I am a</span>
               <TypeAnimation
                 sequence={[
                   "Full-Stack Developer",
                   2000,
-                  "Enthusiastic Contributer",
+                  "Eager Contributor",
                   2000,
                   "Backend Developer",
                   2000,
                   "Passionate Learner",
+                  2000,
+                  "Frontend Developer",
+                  2000,
+                  "Enthusiastic Worker",
                   2000,
                 ]}
                 speed={50}
@@ -75,15 +80,17 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
+              <a href={Resume} target='_blank' rel='noreferrer noopener'>
+                <button className='btn btn-lg'>Hire Me</button>
+              </a>
               <Link
                 to='projects'
                 activeClass='active'
                 smooth={true}
                 spy={true}
-                className='text-gradient btn-link'
+                className='text-gradient btn-link cursor-pointer'
               >
-                <a href='#'>My Portfolio</a>
+                My Portfolio
               </Link>
             </motion.div>
             <motion.div
@@ -93,13 +100,25 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href='https://www.linkedin.com/in/davis-morales/'>
+              <a
+                href='https://www.linkedin.com/in/davis-morales/'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
                 <FaLinkedin />
               </a>
-              <a href='https://github.com/davismorales'>
+              <a
+                href='https://github.com/davismorales'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
                 <FaGithub />
               </a>
-              <a href='https://nba-reference-6qtd.onrender.com/'>
+              <a
+                href='https://nba-reference-6qtd.onrender.com/'
+                target='_blank'
+                rel='noreferrer noopener'
+              >
                 <FaDribbble />
               </a>
             </motion.div>
