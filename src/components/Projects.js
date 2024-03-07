@@ -40,22 +40,6 @@ const Projects = () => {
                 </button>
               </a>
             </div>
-            {/* <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
-              <div className='group-hover:bg-black/70  w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img
-                className='group-hover:scale-125 transition-all duration-500'
-                src={Img2}
-                alt=''
-              />
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>
-                  Utilizing APIs to Display Unique Data in React
-                </span>
-              </div>
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>NBA Reference</span>
-              </div>
-            </div> */}
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.2)}
@@ -80,22 +64,28 @@ const Projects = () => {
                 <span className='text-3xl text-white'>Portfolio Website</span>
               </div>
             </div>
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
-              <div className='group-hover:bg-black/70  w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img
-                className='group-hover:scale-125 transition-all duration-500'
-                src={NbaReferencePreview}
-                alt=''
-              />
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient'>
-                  Utilizing APIs to Display Unique Data in React
-                </span>
+            <a
+              href='https://nba-reference-6qtd.onrender.com/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+                <div className='group-hover:bg-black/70  w-full h-full absolute z-40 transition-all duration-300'></div>
+                <img
+                  className='group-hover:scale-125 transition-all duration-500'
+                  src={NbaReferencePreview}
+                  alt=''
+                />
+                <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                  <span className='text-gradient'>
+                    Utilizing APIs to Display Unique Data in React
+                  </span>
+                </div>
+                <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                  <span className='text-3xl text-white'>NBA Reference</span>
+                </div>
               </div>
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>NBA Reference</span>
-              </div>
-            </div>
+            </a>
           </motion.div>
         </div>
       </div>
