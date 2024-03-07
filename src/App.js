@@ -16,6 +16,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <div className='h-[200px]'></div>
     </div>
   );
 };
