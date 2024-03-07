@@ -46,10 +46,10 @@ const About = () => {
               with honors. Post college I have worked within the Missouri
               Government assisting in the development of vital software.
             </p>
-            <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+            <div className='flex gap-x-6 lg:gap-x-10 mb-12 mt-2'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={4} duration={4} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Years of <br /> Experience
@@ -57,7 +57,7 @@ const About = () => {
               </div>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={3} duration={4} /> : null}
+                  {inView ? <CountUp start={0} end={3} duration={5} /> : null}
                   k+
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -67,7 +67,7 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? (
-                    <CountUp start={0} end={3.88} duration={3} decimals={2} />
+                    <CountUp start={0} end={3.9} duration={4} decimals={1} />
                   ) : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>

@@ -58,7 +58,7 @@ const Services = () => {
             <Link to='projects' activeClass='active' smooth={true} spy={true}>
               <button className='btn btn-sm mb-8'>See my work</button>
             </Link>
-            <div className='mx-auto py-10 flex flex-1 justify-start items-start'>
+            <div className='mx-auto py-10 flex flex-1 justify-start items-start xs:justify-between xs:items-center xs:p-1'>
               <TechSkill src={react_logo} alt='React' label='React' />
               <TechSkill src={spring_logo} alt='Spring' label='Spring' />
               <TechSkill src={cypress_logo} alt='Cypress' label='Cypress' />
