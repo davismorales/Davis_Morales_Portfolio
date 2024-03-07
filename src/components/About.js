@@ -48,7 +48,7 @@ const About = () => {
             </p>
             <div className='flex justify-center lg:justify-normal gap-x-6 lg:gap-x-10 mb-12 mt-2'>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='xs:text-[32px] sm:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={4} duration={4} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -56,7 +56,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='xs:text-[32px] sm:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? <CountUp start={0} end={3} duration={5} /> : null}
                   k+
                 </div>
@@ -65,7 +65,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <div className='text-[40px] font-tertiary text-gradient mb-2'>
+                <div className='xs:text-[32px] sm:text-[40px] font-tertiary text-gradient mb-2'>
                   {inView ? (
                     <CountUp start={0} end={3.9} duration={4} decimals={1} />
                   ) : null}
