@@ -10,6 +10,8 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 
+import { Link } from "react-scroll";
+
 const Banner = () => {
   return (
     <section
@@ -60,9 +62,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum sollicitudin aliquam sagittis. Orci varius natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Hi, my name is Davis Morales. I am so happy that you are here. My
+              extensive Front-end and Backend software development skills would
+              be the perfect addition to any company’s team skillset. I am
+              solution-oriented, enthusiastic, and persistent when it comes to
+              diving into projects and working with others.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -72,9 +76,15 @@ const Banner = () => {
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
               <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Portfolio
-              </a>
+              <Link
+                to='projects'
+                activeClass='active'
+                smooth={true}
+                spy={true}
+                className='text-gradient btn-link'
+              >
+                <a href='#'>My Portfolio</a>
+              </Link>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -83,13 +93,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href='#'>
+              <a href='https://www.linkedin.com/in/davis-morales/'>
                 <FaLinkedin />
               </a>
-              <a href='#'>
+              <a href='https://github.com/davismorales'>
                 <FaGithub />
               </a>
-              <a href='#'>
+              <a href='https://nba-reference-6qtd.onrender.com/'>
                 <FaDribbble />
               </a>
             </motion.div>

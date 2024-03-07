@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 
+import { Link } from "react-scroll";
+
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -42,7 +44,7 @@ const About = () => {
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
                   Years of <br /> Experience
@@ -69,9 +71,16 @@ const About = () => {
             </div>
             <div className='flex gap-x-8 items-center'>
               <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Portfolio
-              </a>
+
+              <Link
+                to='projects'
+                activeClass='active'
+                smooth={true}
+                spy={true}
+                className='text-gradient btn-link'
+              >
+                <a href='#'>My Portfolio</a>
+              </Link>
             </div>
           </motion.div>
         </div>

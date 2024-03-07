@@ -5,8 +5,8 @@
 .btn {
   background: linear-gradient(
     92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
+    #56ff59 21.43%,
+    #36eed8 50.63%,
     #3bace2 100%,
     #406aff 117.04%
   );
@@ -18,8 +18,8 @@
     92.23deg,
     #406aff 21.43%,
     #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #36eed8 100%,
+    #56ff59 117.04%
   );
 }
 
@@ -29,8 +29,8 @@
     92.23deg,
     #406aff 21.43%,
     #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #36eed8 100%,
+    #56ff59 117.04%
   );
 }
 
@@ -41,7 +41,7 @@
 }
 
 @layer base {
-  body{
+  body {
     @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
@@ -63,9 +63,16 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#56ff59] to-[#406aff] font-bold font-primary hover:from-[#406aff] hover:to-[#56ff59];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+}
+
+.tech-icon {
+  @apply w-[90px] h-[90px] flex items-center justify-center mr-4 rounded-full border border-[#406aff];
+}
+.tech-icon > img {
+  @apply hover:scale-125 transition-all duration-500 w-[60px] h-[60px];
 }

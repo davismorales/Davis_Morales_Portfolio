@@ -35,7 +35,7 @@ const Nav = () => {
             <BiUser />
           </Link>
           <Link
-            to='services'
+            to='skills'
             activeClass='active'
             smooth={true}
             spy={true}
@@ -44,7 +44,7 @@ const Nav = () => {
             <BsClipboardData />
           </Link>
           <Link
-            to='work'
+            to='projects'
             activeClass='active'
             smooth={true}
             spy={true}
@@ -52,7 +52,7 @@ const Nav = () => {
           >
             <BsBriefcase />
           </Link>
-          <Link
+          {/* <Link
             to='contact'
             activeClass='active'
             smooth={true}
@@ -60,7 +60,7 @@ const Nav = () => {
             className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'
           >
             <BsChatSquareText />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
